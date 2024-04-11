@@ -20,4 +20,7 @@ public class Player {
     public int getAttack() {
         return attack;
     }
+    public boolean isAlive() {
+        return health > 0;
+    }
 }
