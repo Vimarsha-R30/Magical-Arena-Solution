@@ -20,12 +20,16 @@ public class MagicalArena {
 
             defender.health -= actualDamage;
 
+            System.out.println("Attacker rolls: " + attackRoll + ", Defender rolls: " + defendRoll);
+            System.out.println("Attack damage: " + attackDamage + ", Defend damage: " + defendDamage);
+            System.out.println("Actual damage: " + actualDamage);
+
             Player temp = attacker;
             attacker = defender;
             defender = temp;
 
         }
-
+        System.out.println("---------------------------------------------------------------------");
         if(!playerA.isAlive()){
             System.out.println("Player B wins!!");
         } else{
