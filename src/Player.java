@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class Player {
     int health;
     int strength;
@@ -22,5 +24,10 @@ public class Player {
     }
     public boolean isAlive() {
         return health > 0;
+    }
+
+    public int rollDie() {
+        Random random = new Random();
+        return random.nextInt(6) + 1;
     }
 }
